@@ -1,0 +1,55 @@
+body {
+    font-family: Oswald, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.section {
+    /*display: none;*/
+
+    /*padding: 50px;*/
+}
+
+section.type-oben {
+    background: url(pics/calligraphieBlackDarkmode.jpg) repeat;
+    opacity: 1.0;
+
+    background-blend-mode: lighten;
+
+    color:white;
+    text-align: center;
+    height: 40vh;  
+    margin: 0;
+
+    spacer{
+        font-size: 1em;
+        margin: 0em;
+        color: transparent;
+    }
+    h1 {
+        font-size: 5em;
+        margin: 0em;
+    }
+    h2 {
+        color: transparent;
+        font-size: 1em;
+        text-decoration: overline;
+        text-decoration-color: red;
+        text-decoration-thickness: 100%; 
+    } 
+    h3 {
+        text-align: left;
+        font-size: 1.2em;
+        margin-left: 1em;
+    }     
+    /*border: solid 4px red;*/ 
+   }
+   
+   section.type-unten {
+    background-color: white;
+    color: black;
+    margin: 5%;
+   }
+
+
