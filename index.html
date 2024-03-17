@@ -4,147 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOJO 1</title>
-    <link rel="stylesheet" type="text/css" href="css/default.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="pics/favicon.ico">
-    <link rel="stylesheet" href="css/component.css" />
-    <script src="js/modernizr.custom.js"></script>
-    <script type="text/javascript"></script>
+    <script src="js/myjava.js"></script>
   </head>
   <body>
-    <div class="container demo-1"> 
-      <div class="main clearfix">
-        <div class="column">
-          <div id="dl-menu" class="dl-menuwrapper">
-            <button class="dl-trigger">Open Menu</button>
-            <ul class="dl-menu">
-              <li>
-                <a href="#">Fashion</a>
-                <ul class="dl-submenu">
-                  <li>
-                    <a href="#">Men</a>
-                    <ul class="dl-submenu">
-                      <li><a href="#">Shirts</a></li>
-                      <li><a href="#">Jackets</a></li>
-                      <li><a href="#">Chinos &amp; Trousers</a></li>
-                      <li><a href="#">Jeans</a></li>
-                      <li><a href="#">T-Shirts</a></li>
-                      <li><a href="#">Underwear</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Women</a>
-                    <ul class="dl-submenu">
-                      <li><a href="#">Jackets</a></li>
-                      <li><a href="#">Knits</a></li>
-                      <li><a href="#">Jeans</a></li>
-                      <li><a href="#">Dresses</a></li>
-                      <li><a href="#">Blouses</a></li>
-                      <li><a href="#">T-Shirts</a></li>
-                      <li><a href="#">Underwear</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Children</a>
-                    <ul class="dl-submenu">
-                      <li><a href="#">Boys</a></li>
-                      <li><a href="#">Girls</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Electronics</a>
-                <ul class="dl-submenu">
-                  <li><a href="#">Camera &amp; Photo</a></li>
-                  <li><a href="#">TV &amp; Home Cinema</a></li>
-                  <li><a href="#">Phones</a></li>
-                  <li><a href="#">PC &amp; Video Games</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Furniture</a>
-                <ul class="dl-submenu">
-                  <li>
-                    <a href="#">Living Room</a>
-                    <ul class="dl-submenu">
-                      <li><a href="#">Sofas &amp; Loveseats</a></li>
-                      <li><a href="#">Coffee &amp; Accent Tables</a></li>
-                      <li><a href="#">Chairs &amp; Recliners</a></li>
-                      <li><a href="#">Bookshelves</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Bedroom</a>
-                    <ul class="dl-submenu">
-                      <li>
-                        <a href="#">Beds</a>
-                        <ul class="dl-submenu">
-                          <li><a href="#">Upholstered Beds</a></li>
-                          <li><a href="#">Divans</a></li>
-                          <li><a href="#">Metal Beds</a></li>
-                          <li><a href="#">Storage Beds</a></li>
-                          <li><a href="#">Wooden Beds</a></li>
-                          <li><a href="#">Children's Beds</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Bedroom Sets</a></li>
-                      <li><a href="#">Chests &amp; Dressers</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Home Office</a></li>
-                  <li><a href="#">Dining &amp; Bar</a></li>
-                  <li><a href="#">Patio</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Jewelry &amp; Watches</a>
-                <ul class="dl-submenu">
-                  <li><a href="#">Fine Jewelry</a></li>
-                  <li><a href="#">Fashion Jewelry</a></li>
-                  <li><a href="#">Watches</a></li>
-                  <li>
-                    <a href="#">Wedding Jewelry</a>
-                    <ul class="dl-submenu">
-                      <li><a href="#">Engagement Rings</a></li>
-                      <li><a href="#">Bridal Sets</a></li>
-                      <li><a href="#">Women's Wedding Bands</a></li>
-                      <li><a href="#">Men's Wedding Bands</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div><!-- /dl-menuwrapper -->
+
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Dojo 1</a>
+      <a href="#news">Karate</a>
+      <div class="dropdown">
+        <button class="dropbtn">Training
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Trainer</a>
+          <a href="#">Probetraining</a>
+          <a href="#">Gürtelprüfung</a>
+          <a href="#">Meisterschaften</a>
+          <a href="#">Lehrgänge</a>
         </div>
       </div>
+      <div class="dropdown">
+        <button class="dropbtn">Verein
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Vorstand</a>
+          <a href="#">Anmeldung</a>
+          <a href="#">Verbände</a>
+        </div>
+      </div>
+      <a href="#about">Bilder</a>
+      <a href="#about">Kontakt</a>
+      <a href="javascript:void(0);" class="icon"
+        onclick="myFunction()">&#9776;</a>
     </div>
-    <script
-      src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/jquery.dlmenu.js"></script>
-    <script>
-			$(function() {
-				$( '#dl-menu' ).dlmenu();
-			});
-		</script>
 
     <div class="type-oben">
-      <h3>Heute anfangen!</h3>
+      <h2>Heute anfangen!</h2>
       <h1>DOJO 1</h1>
-      <div id="redRow">&nbsp;</div>
+      <div id="balken"></div>
     </div>
 
     <div class="type-unten">
-      <h2>Willkommen in der ältesten Münchner Karateschule!</h2>
-      <p>Im Dojo München 1 wird traditionelles Shotokan-Karate nach den
-        Prinzipien und Lehrmethoden von Meister Funakoshi Gichin
-        praktiziert.</p>
-      <p>Unser Verein ist als gemeinnützig anerkannt und verfolgt keine
-        kommerziellen Ziele.</p>
-      <p>Komm vorbei und trainiere mit uns!</p>
-      <picture>
-        <img src="pics/karatezeichen.png" alt="KaraTe Do" style="width:30%;">
-      </picture>
+      <div class="text">
+        <br>
+        <h2>Willkommen in der ältesten Münchner Karateschule!</h2>
+        <p>Im Dojo München 1 wird traditionelles Shotokan-Karate nach den
+          Prinzipien und Lehrmethoden von Meister Funakoshi Gichin
+          praktiziert.</p>
+        <p>Unser Verein ist als gemeinnützig anerkannt und verfolgt keine
+          kommerziellen Ziele.</p>
+        <p>Komm vorbei und trainiere mit uns!</p>
+        <picture>
+          <img src="pics/karatezeichen.png" alt="KaraTe Do"
+            style="width:20%;">
+        </picture>
+      </div>
     </div>
 
   </body>
