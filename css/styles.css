@@ -1,5 +1,6 @@
 body{
   background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #balken {
@@ -12,25 +13,25 @@ body{
   vertical-align: text-bottom;
 
   position: relative;
-  transform: translateY(-200%);
-
+  bottom: 40%;
   }
 
 .type-oben{
   margin: 0;
-  height: 27vh;
+  height: 33%;
   background-color: black;
   color:white;
   background-image: url("../pics/calligraphieBlackDarkmode.jpg");
 }
 .type-oben h1{
   text-align: center;
-  font-size: 11vh;
-  transform: translateY(-35%);
+  font-size:400%;
+  vertical-align: middle;
+  transform: translateY(-50%); 
 }
 
 .type-oben h2{
-  font-size: 200%;
+  font-size: 100%;
   text-align: right;
   margin-right: 2vw;
 }
@@ -38,7 +39,7 @@ body{
 .type-unten{
   color: black;
 	background: #fffcf5;
-  height: 80vh;
+  height: 88%;
 }
 
 .type-unten .text{
@@ -161,4 +162,13 @@ body{
     width: 100%;
     text-align: left;
   }
+}
+
+table, td, th {
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
