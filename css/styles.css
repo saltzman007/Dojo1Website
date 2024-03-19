@@ -10,15 +10,12 @@ body{
   height: 4vh;
   background-color: red;
  
-  vertical-align: text-bottom;
-
-  position: relative;
-  bottom: 40%;
+  vertical-align:middle;
   }
 
 .type-oben{
   margin: 0;
-  height: 33%;
+  height: 28vw;
   background-color: black;
   color:white;
   background-image: url("../pics/calligraphieBlackDarkmode.jpg");
@@ -27,7 +24,7 @@ body{
   text-align: center;
   font-size:400%;
   vertical-align: middle;
-  transform: translateY(-50%); 
+  /* transform: translateY(-50%);  */
 }
 
 .type-oben h2{
@@ -39,12 +36,33 @@ body{
 .type-unten{
   color: black;
 	background: #fffcf5;
-  height: 88%;
+  /* height: 88%; */
 }
 
 .type-unten .text{
   font-size: larger;
   margin: 5vw;
+}
+
+
+/* || main layout */
+
+main {
+  display: flex;
+}
+
+article {
+  flex: 4;
+}
+
+aside {
+  flex: 1;
+  margin-left: 10px;
+  margin: auto;
+}
+
+aside li {
+  padding-bottom: 10px;
 }
 
 /* Add a black background color to the top navigation */
@@ -171,4 +189,23 @@ table, td, th {
 table {
   width: 100%;
   border-collapse: collapse;
+}
+
+/*für maps*/
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
