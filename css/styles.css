@@ -53,6 +53,26 @@ footer a {
   margin: 5vw;
 }
 
+/*Flex Tabellen für Trainer, Vorstand, Verband*/
+/* * {
+  box-sizing: border-box;
+} */
+
+.myFlexTable * {
+  box-sizing: border-box;
+}
+
+.myFlexTable .column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.myFlexTable .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /* || main layout */
 
@@ -72,6 +92,12 @@ aside {
 
 aside li {
   padding-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .myFlexTable .column {
+    width: 80%;
+  }
 }
 
 /* Add a black background color to the top navigation */
@@ -236,3 +262,4 @@ table {
   width: 100%;
   height: 100%;
 }
+
