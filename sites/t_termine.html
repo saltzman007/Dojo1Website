@@ -1,166 +1,198 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOJO 1</title>
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
-    <link rel="icon" type="image/x-icon" href="../pics/favicon.ico">
-    <script src="../js/myjava.js"></script>
-  </head>
-  <body>
-    <header class="type-oben">
-      <nav class="topnav" id="myTopnav">
-        <a href="../index.html">Dojo 1</a>
-        <a href="karate.html">Karate</a>
-        <div class="dropdown">
-          <button class="dropbtn">Training
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="t_termine.html" class="active">Wann &#38; Wo</a>
-            <a href="t_trainer.html">Trainer</a>
-            <a href="t_probe.html">Probetraining</a>
-            <a href="t_guertel.html">Gürtelprüfung</a>
-            <a href="t_meister.html">Meisterschaften</a>
-            <a href="t_lehrgang.html">Lehrgänge</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">Verein
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="v_vorstand.html">Vorstand</a>
-            <a href="v_anmeldung.html">Anmeldung</a>
-            <a href="v_verbaende.html">Verbände</a>
-          </div>
-        </div>
-        <a href="pics.html">Bilder</a>
-        <a href="kontakt.html">Kontakt</a>
-        <a href="javascript:void(0);" class="icon"
-          onclick="myFunction()">&#9776;</a>
-      </nav>
-      <h2>Heute anfangen!</h2>
-      <h1>Training</h1>
-      <div id="balken"></div>
-    </header>
 
-    <main class="type-unten">
-      <section class="text">
-        <section>
-          <header class="text">
-            <h2>Termine</h2>
-          </header>
-        </section>
-        <section class="myFlexTable">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOJO 1</title>
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <link rel="icon" type="image/x-icon" href="../pics/favicon.ico">
+  <script src="../js/myjava.js"></script>
+</head>
+
+<body>
+  <header class="type-oben">
+    <nav class="topnav" id="myTopnav">
+      <a href="../index.html">Dojo 1</a>
+      <a href="karate.html">Karate</a>
+      <div class="dropdown">
+        <button class="dropbtn">Training
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="t_termine.html" class="active">Wann &#38; Wo</a>
+          <a href="t_trainer.html">Trainer</a>
+          <a href="t_probe.html">Probetraining</a>
+          <a href="t_guertel.html">Gürtelprüfung</a>
+          <a href="t_meister.html">Meisterschaften</a>
+          <a href="t_lehrgang.html">Lehrgänge</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Verein
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="v_vorstand.html">Vorstand</a>
+          <a href="v_anmeldung.html">Anmeldung und Beiträge</a>
+          <a href="v_verbaende.html">Verbände</a>
+        </div>
+      </div>
+      <a href="pics.html">Bilder</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+    <h2>Heute anfangen!</h2>
+    <h1>Training</h1>
+    <div id="balken"></div>
+  </header>
+
+  <main class="type-unten">
+    <section>
+      <section>
+        <header class="text">
+          <h2>Termine</h2>
+        </header>
+      </section>
+      <!-- <section class="myFlexTable">
           <div class="text">
             <div class="row">
-              <!-- <div class="column"> -->
-                Dienstags liegt die Betonung auf Kata, Donnerstag auf
-                Kumite.<br />
-                Du kannst zu einer Stunde kommen oder auch drei Stunden
-                trainieren.<br />
-                Für Anfänger sind die früheren Termine besser geeignet.<br />
-                Während der Schulferien können wir leider kein Training
-                anbieten.<br />
-                Dienstags beginnt das 19:00 Training mit Selbstverteidigung.<br />
-                Sonntags haben wir Zugang zu einer Tanzschule: da kannst Du
-                selbstständig vor
-                großen Spiegeln Deine Bewegungen kontrollieren. Für den Zugang
-                zur Tanzschule bitte
-                unsere Trainer ansprechen!
-                <p>TODO online Link prüfen.</p>
-                <div style="overflow-x: auto">
-                  <table style="width: auto;padding: 1vw;">
-                    <thead>
-                      <tr>
-                        <th></th>
-                        <th style="padding: 1vw;">Dienstag</th>
-                        <th style="padding: 1vw;">Donnerstag</th>
-                        <th style="padding: 1vw;">Samstag</th>
-                        <th style="padding: 1vw;">Sonntag</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th>10:00 - 11:00</th>
-                        <td></td>
-                        <td></td>
-                        <td style="text-align: center;">Online<br />mit
-                          Christoph</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <th>17:00 - 18:00</th>
-                        <td style="text-align: center;">Kinder<br />Halle
-                          unten</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <th>18:00 - 19:00</th>
-                        <td style="text-align: center;">Kihon<br />Halle
-                          oben</td>
-                        <td style="text-align: center;">Kihon<br />Halle
-                          unten</td>
-                        <td></td>
-                        <td style="text-align: center;">Spiegelsaal</td>
-                      </tr>
-                      <tr>
-                        <th>19:00 - 20:00</th>
-                        <td style="text-align: center;">Kata 1<br />Halle
-                          oben</td>
-                        <td style="text-align: center;">Kumite 1<br />Halle
-                          unten</td>
-                        <td></td>
-                        <td style="text-align: center;">Spiegelsaal</td>
-                      </tr>
-                      <tr>
-                        <th>20:00 - 21:00</th>
-                        <td style="text-align: center;">Kata 2<br />Halle
-                          oben</td>
-                        <td style="text-align: center;">Kumite 2<br />Halle
-                          unten</td>
-                        <td></td>
-                        <td style="text-align: center;">Spiegelsaal</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <br />
-                <a
-                  href="https://us02web.zoom.us/j/3328373875?pwd=bld4TmZqZ1dSSDZUU2wrbDFubzVmdz09"
-                  target="_blank">Hier findest Du unser Online Training!</a>
-
-                <h2>So findest Du uns</h2>
-                Wir trainieren in der Turnhalle der Meisterschule für Mode am
-                Sendlinger Torplatz 14 in München.</br>
-                Der Eingang ist da, wo der rote Punkt ist!</br>
-              </br>
-                <a
-                  href="https://www.google.com/maps/place/Sendlinger-Tor-Platz+14,+80336+M%C3%BCnchen/@48.1337825,11.5654879,17z/data=!3m1!4b1!4m5!3m4!1s0x479ddf5f3077e841:0x16e56ec9b75ea5fc!8m2!3d48.1337789!4d11.5680628?entry=ttu"
-                  target="_blank">
-                  <img src="../pics/karte.png"
-                    alt="HTML tutorial" width="80%"></a>
-                <div style="font-size: small;">Externer Link</div>
+              <div class="column">
+                <img src="../pics/karatezeichen.png" alt="Kruno" width="60%">
               </div>
-              <!-- <div class="column">
-                <img src="../pics/logo.png" width="70%">
-              </div> -->
+              <div class="column">
+                <p>Karate ist ein Sport für jedes Alter und stärkt Ausdauer,
+                  Geschicklichkeit, Beweglichkeit, Kraft und Wehrfähigkeit.<br />
+                  Als Halbkontaktsport ist Shotokan Karate nicht nur eine Kampfkunst,
+                  hat aber auch nicht das Verletzungsrisiko
+                  einer reinen Kampfsportart.<br />
+                  Die Geschichte und die verschiedenen Ausprägungen von Karate sind im
+                  <a href="https://de.wikipedia.org/wiki/Karate">Internet</a>
+                  gut beschrieben.<br /></p>
+                Da Karate aus Okinawa in Japan stammt, ist man immer wieder mit
+                japanischen Ausdrücken konfrontiert.
+                Hier kurz die wenigen davon, die auf dieser Website vorkommen:<br />
+                <br />
+                Karate basiert auf drei Säulen:
+                <ul>
+                  <li><b>Kihon</b> ist die Grundschule, hier werden die Schritte und
+                    Bewegungen gelernt</li>
+                  <li><b>Kata</b> sind festgelegte Bewegungsabläufe, die zusammen oder
+                    alleine geübt werden</li>
+                  <li><b>Kumite</b> ist der Kampf, das beginnt im Training mit
+                    abgesprochenen Angriffen und Kontertechniken</li>
+                </ul>
+                Zusätzlich werden bei uns die Grundlagen der Selbstverteigung unterrichtet.
+              </div>
             </div>
-          <!-- </div> -->
-        </section>
+          </div>
+        </section> -->
+      <section class="myFlexTable">
+        <div class="text">
+          <div class="row">
+            <div class="column">
+              <div style="overflow-x: auto">
+                <table style="width: 80%;padding: 1vw;font-size: x-small;">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th style="padding: 1vw;">Dienstag</th>
+                      <th style="padding: 1vw;">Donnerstag</th>
+                      <th style="padding: 1vw;">Samstag</th>
+                      <th style="padding: 1vw;">Sonntag</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>10:00 - 11:00</th>
+                      <td></td>
+                      <td></td>
+                      <td style="text-align: center;">Online<br />mit
+                        Christoph</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th>17:00 - 18:00</th>
+                      <td style="text-align: center;">Kinder<br />Halle
+                        unten</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th>18:00 - 19:00</th>
+                      <td style="text-align: center;">Kihon<br />Halle
+                        oben</td>
+                      <td style="text-align: center;">Kihon<br />Halle
+                        unten</td>
+                      <td></td>
+                      <td style="text-align: center;">Spiegelsaal</td>
+                    </tr>
+                    <tr>
+                      <th>19:00 - 20:00</th>
+                      <td style="text-align: center;">Kata 1<br />Halle
+                        oben</td>
+                      <td style="text-align: center;">Kumite 1<br />Halle
+                        unten</td>
+                      <td></td>
+                      <td style="text-align: center;">Spiegelsaal</td>
+                    </tr>
+                    <tr>
+                      <th>20:00 - 21:00</th>
+                      <td style="text-align: center;">Kata 2<br />Halle
+                        oben</td>
+                      <td style="text-align: center;">Kumite 2<br />Halle
+                        unten</td>
+                      <td></td>
+                      <td style="text-align: center;">Spiegelsaal</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="column">
+              Dienstags liegt die Betonung auf Kata, Donnerstag auf
+              Kumite.<br />
+              Du kannst zu einer Stunde kommen oder auch drei Stunden
+              trainieren.<br />
+              Für Anfänger sind die früheren Termine besser geeignet.<br />
+              Während der Schulferien können wir leider kein Training
+              anbieten.<br />
+              Dienstags beginnt das 19:00 Training mit Selbstverteidigung.<br />
+              Sonntags haben wir Zugang zu einer Tanzschule: da kannst Du
+              selbstständig vor
+              großen Spiegeln Deine Bewegungen kontrollieren. Für den Zugang
+              zur Tanzschule bitte
+              unsere Trainer ansprechen!
+              <br />
+              <a href="https://us02web.zoom.us/j/3328373875?pwd=bld4TmZqZ1dSSDZUU2wrbDFubzVmdz09" target="_blank">Hier
+                findest Du unser Online Training!</a>
+
+              <h2>So findest Du uns</h2>
+              Wir trainieren in der Turnhalle der Meisterschule für Mode am
+              Sendlinger Torplatz 14 in München.</br>
+              Der Eingang ist da, wo der rote Punkt ist!</br>
+              </br>
+              <a href="https://www.google.com/maps/place/Sendlinger-Tor-Platz+14,+80336+M%C3%BCnchen/@48.1337825,11.5654879,17z/data=!3m1!4b1!4m5!3m4!1s0x479ddf5f3077e841:0x16e56ec9b75ea5fc!8m2!3d48.1337789!4d11.5680628?entry=ttu"
+                target="_blank">
+                <img src="../pics/karte.png" alt="HTML tutorial" width="80%">
+              </a>
+              <div style="font-size: x-small;">Externer Link</div>
+            </div>
+
       </section>
-    </main>
-    <footer>
-      <p style="text-align:left;">
-        (C) 2023
-        <span style="float:right;">
-          <a href="https://www.saltzman.de" target="_blank">saltzman</a>
-        </span>
-      </p>
-    </footer>
-  </body>
+      </div>
+    </section>
+    </section>
+  </main>
+  <footer>
+    <p style="text-align:left;">
+      (C) 2023
+      <span style="float:right;">
+        <a href="https://www.saltzman.de" target="_blank">saltzman</a>
+      </span>
+    </p>
+  </footer>
+</body>
+
 </html>
