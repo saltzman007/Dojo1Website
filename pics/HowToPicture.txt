@@ -1,0 +1,6 @@
+Bild mit MS bildbetrachter öffnen
+Mit 15% Größe speichern
+Ausschnitt freihändig auswählen
+das Ergebnis mit ausschnitt 3:4 wählen
+bild größe ändern 600x800
+bild als png speichern
