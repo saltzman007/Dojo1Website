@@ -1,0 +1,46 @@
+name: Check for Broken Links
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+
+jobs:
+  check-broken-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install broken link checker
+        run: npm install -g broken-link-checker
+
+      - name: Check for broken links
+        id: check_links
+        continue-on-error: true
+        run: |
+          blc ./**/*.html --exclude "*node_modules*" --json > results.json || true
+          cat results.json
+
+      - name: Parse results and create issue if needed
+        if: success()
+        uses: peter-evans/create-issue@v4
+        with:
+          title: '🔗 Broken Links Detected - Daily Check'
+          body: |
+            ⚠️ The automated broken link checker found issues:
+            
+            **Scan Time:** ${{ github.event.schedule }}
+            
+            **Results:**
+            ```json
+            ${{ steps.check_links.outputs.stdout }}
+            ```
+            
+            Please review and fix the broken links in the HTML files.
+          labels: 'bug, broken-links'
+          assignees: 'saltzman007'
