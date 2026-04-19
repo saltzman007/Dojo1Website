@@ -1,9 +1,13 @@
 name: Check for fucking Broken Links
 
 on:
-  workflow_dispatch:  # Add this line to enable manual triggering
+  workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+    - cron: '0 0 * * *'
+
+permissions:
+  issues: write
+  contents: read
 
 jobs:
   check-broken-links:
