@@ -28,7 +28,8 @@ jobs:
         id: check_links
         continue-on-error: true
         run: |
-          blc ./**/*.html --exclude "*node_modules*" --json > results.json || true
+          # blc ./**/*.html --exclude "*node_modules*" --json > results.json || true
+          blc https://www.karate-muenchen.de/sites --exclude "*node_modules*" --json > results.json || true
           cat results.json
 
       - name: Parse results and create issue if needed
