@@ -1,6 +1,7 @@
 name: Check for fucking Broken Links
 
 on:
+  workflow_dispatch:  # Add this line to enable manual triggering
   schedule:
     - cron: '0 0 * * *'  # Runs daily at midnight UTC
 
